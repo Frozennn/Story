@@ -1,0 +1,62 @@
+{
+  "travian": {
+    "server": "https://ts1.travian.com",
+    "username": "YOUR_USERNAME",
+    "password": "YOUR_PASSWORD",
+    "villages": [
+      {
+        "name": "Main Village",
+        "coordinates": "0|0",
+        "enabled": true
+      }
+    ]
+  },
+  "automation": {
+    "sendInterval": {
+      "min": 240000,
+      "max": 360000
+    },
+    "delays": {
+      "betweenActions": {
+        "min": 3000,
+        "max": 7000
+      },
+      "beforeClick": {
+        "min": 500,
+        "max": 2000
+      },
+      "pageLoad": {
+        "min": 2000,
+        "max": 5000
+      }
+    },
+    "humanBehavior": {
+      "enableMouseMovements": true,
+      "enableScrolling": true,
+      "enableHover": true,
+      "randomizeTimings": true
+    }
+  },
+  "browser": {
+    "headless": false,
+    "devtools": false,
+    "viewport": {
+      "width": 1366,
+      "height": 768
+    },
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  },
+  "logging": {
+    "level": "info",
+    "logToFile": true,
+    "logToConsole": true,
+    "maxLogFiles": 5,
+    "maxLogSize": "10m"
+  },
+  "safety": {
+    "maxRetries": 3,
+    "pauseOnCaptcha": true,
+    "pauseOnError": true,
+    "emergencyStop": true
+  }
+}
